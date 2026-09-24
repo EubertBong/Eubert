@@ -2,8 +2,6 @@ import React, { useEffect } from 'react'
 import AOS from 'aos';
 import MyRouter from './routes';
 import { HelmetProvider } from 'react-helmet-async';
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 import './styles/custom.scss';
 import './styles/bootstrap.scss';
 import './styles/styles.scss';
@@ -38,7 +36,6 @@ function App() {
   return (
     <HelmetProvider>
       <div>
-        <ToastContainer />
         <MyRouter />
       </div>
     </HelmetProvider>
